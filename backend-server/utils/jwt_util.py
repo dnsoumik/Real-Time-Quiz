@@ -29,7 +29,7 @@ import tornado.web
 class JWTHandler:
     def __init__(self):
         self.algorithm = 'HS256'
-        self.exp_seconds = 3600
+        self.exp_seconds = 3600 * 24 * 365
 
     def generate_token(self, user_id):
         """Generates JWT token for a given user ID"""

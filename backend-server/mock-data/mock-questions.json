@@ -1,0 +1,302 @@
+[
+    {
+        "question": "What does HTML stand for?",
+        "options": [
+            "HyperText Markup Language",
+            "HyperTransfer Markup Language",
+            "HyperText Main Language",
+            "Hyper Transfer Main Language"
+        ],
+        "ans": 2
+    },
+    {
+        "question": "Which programming language is known for its snake logo?",
+        "options": [
+            "Python",
+            "Java",
+            "C++",
+            "JavaScript"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "What does CSS stand for in web development?",
+        "options": [
+            "Cascading Style Sheets",
+            "Computer Style Sheets",
+            "Colorful Style Sheets",
+            "Creative Style Sheets"
+        ],
+        "ans": 3
+    },
+    {
+        "question": "Which company developed the Java programming language?",
+        "options": [
+            "Sun Microsystems",
+            "Microsoft",
+            "Google",
+            "Apple"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of the following is a JavaScript framework?",
+        "options": [
+            "React",
+            "Laravel",
+            "Django",
+            "Flask"
+        ],
+        "ans": 1
+    },
+    {
+        "question": "Which language is primarily used for Android development?",
+        "options": [
+            "Kotlin",
+            "Swift",
+            "PHP",
+            "Ruby"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "What is the command to install a package in Node.js?",
+        "options": [
+            "npm install",
+            "node add",
+            "npm get",
+            "node fetch"
+        ],
+        "ans": 3
+    },
+    {
+        "question": "Which of these is a version control system?",
+        "options": [
+            "Git",
+            "Jira",
+            "Docker",
+            "Ansible"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of the following is a NoSQL database?",
+        "options": [
+            "MongoDB",
+            "MySQL",
+            "PostgreSQL",
+            "SQLite"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "What does API stand for?",
+        "options": [
+            "Application Programming Interface",
+            "Application Program Interaction",
+            "Applied Program Interface",
+            "Application Process Interface"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which HTML element is used for inserting a line break?",
+        "options": [
+            "<br>",
+            "<break>",
+            "<lb>",
+            "<line>"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which tag is used to define an unordered list in HTML?",
+        "options": [
+            "<ul>",
+            "<ol>",
+            "<li>",
+            "<list>"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which programming language is primarily used for iOS development?",
+        "options": [
+            "Swift",
+            "Kotlin",
+            "Python",
+            "Ruby"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of the following is not a JavaScript data type?",
+        "options": [
+            "Number",
+            "String",
+            "Boolean",
+            "Float"
+        ],
+        "ans": 3
+    },
+    {
+        "question": "Which tag is used to create a hyperlink in HTML?",
+        "options": [
+            "<a>",
+            "<link>",
+            "<href>",
+            "<url>"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which CSS property is used to change the text color of an element?",
+        "options": [
+            "color",
+            "font-color",
+            "text-color",
+            "style-color"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "In JavaScript, which keyword is used to declare a constant?",
+        "options": [
+            "const",
+            "var",
+            "let",
+            "static"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of the following is a front-end JavaScript framework?",
+        "options": [
+            "Angular",
+            "Node.js",
+            "Django",
+            "Flask"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which language is used for querying databases?",
+        "options": [
+            "SQL",
+            "HTML",
+            "CSS",
+            "Java"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of the following is a backend web development framework?",
+        "options": [
+            "Django",
+            "React",
+            "Vue.js",
+            "Bootstrap"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "What does JSON stand for?",
+        "options": [
+            "JavaScript Object Notation",
+            "Java Object Notation",
+            "JavaScript Online Notation",
+            "Java Syntax Notation"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which method is used to fetch data from a web server in JavaScript?",
+        "options": [
+            "fetch()",
+            "get()",
+            "request()",
+            "ajax()"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of these is a popular library for working with state management in React?",
+        "options": [
+            "Redux",
+            "Django",
+            "Laravel",
+            "Flask"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of the following is used to style HTML documents?",
+        "options": [
+            "CSS",
+            "JavaScript",
+            "SQL",
+            "Python"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which HTTP method is used to submit data to a server?",
+        "options": [
+            "POST",
+            "GET",
+            "PUT",
+            "DELETE"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which CSS property controls the size of text?",
+        "options": [
+            "font-size",
+            "text-size",
+            "size",
+            "font-weight"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of these is a key-value store database?",
+        "options": [
+            "Redis",
+            "PostgreSQL",
+            "SQLite",
+            "Oracle"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "What does HTTP stand for?",
+        "options": [
+            "HyperText Transfer Protocol",
+            "Hyper Transfer Text Protocol",
+            "Hyper Transfer Type Protocol",
+            "HyperText Traffic Protocol"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which HTML tag is used to define an image?",
+        "options": [
+            "<img>",
+            "<image>",
+            "<src>",
+            "<picture>"
+        ],
+        "ans": 0
+    },
+    {
+        "question": "Which of the following is used to create responsive web designs?",
+        "options": [
+            "Bootstrap",
+            "SQL",
+            "PHP",
+            "Node.js"
+        ],
+        "ans": 0
+    }
+]
