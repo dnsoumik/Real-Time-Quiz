@@ -5,9 +5,10 @@ from utils.secure_v1 import smkSecureV1
 from bson import ObjectId
 import json
 import re
+from handlers.base_handler import CustomBaseHandler
 
 @smkSecureV1
-class QuestionsHandler(tornado.web.RequestHandler, MongoMixing):
+class QuestionsHandler(CustomBaseHandler, MongoMixing):
 
     questions = MongoMixing.db['questions']
 

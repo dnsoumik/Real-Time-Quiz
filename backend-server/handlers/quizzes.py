@@ -5,9 +5,10 @@ from utils.secure_v1 import smkSecureV1
 from bson import ObjectId
 import json
 import time
+from handlers.base_handler import CustomBaseHandler
 
 @smkSecureV1
-class QuizHandler(tornado.web.RequestHandler, MongoMixing):
+class QuizHandler(CustomBaseHandler, MongoMixing):
 
     quizzes = MongoMixing.db['quizzes']
 

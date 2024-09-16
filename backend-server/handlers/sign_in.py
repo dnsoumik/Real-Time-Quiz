@@ -3,8 +3,9 @@ import tornado
 from utils.log_util import Log
 from utils.mongo_util import MongoMixing
 from utils.jwt_util import JWTHandler
+from handlers.base_handler import CustomBaseHandler
 
-class SignInHandler(tornado.web.RequestHandler, MongoMixing):
+class SignInHandler(CustomBaseHandler, MongoMixing):
 
     accounts = MongoMixing.db['accounts']
 

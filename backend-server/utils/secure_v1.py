@@ -21,6 +21,13 @@ def smkSecureV1(cls):
         """Reusable JWT authentication wrapper for request handler methods."""
         @wraps(method)
         def wrapped_method(self, *args, **kwargs):
+
+            if 'localhost' in self.request.full_url() and self.request.method == 'OPTIONS':
+                self.set_header("Access-Control-Allow-Origin", "*")
+                self.set_header("Access-Control-Allow-Headers", "Content-Type,Authorization")
+                self.set_header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+                return
+
             token = self.request.headers.get('Authorization', None)
             if token:
                 try:

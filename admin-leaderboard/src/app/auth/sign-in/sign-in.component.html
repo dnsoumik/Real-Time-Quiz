@@ -1,0 +1,33 @@
+<div class="sign-in-container">
+  <mat-card class="sign-in-card">
+    <mat-card-title>Welcome to Elsa Quiz Admin</mat-card-title>
+    <mat-card-content>
+      <form>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            placeholder="Enter your username"
+            [(ngModel)]="username"
+            name="username"
+          />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            type="password"
+            placeholder="Enter your password"
+            [(ngModel)]="password"
+            name="password"
+          />
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" class="full-width" (click)="onSignIn()">
+          Sign In
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

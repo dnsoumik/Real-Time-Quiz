@@ -3,9 +3,10 @@ from utils.log_util import Log
 from utils.mongo_util import MongoMixing
 from utils.secure_v1 import smkSecureV1
 from bson import ObjectId
+from handlers.base_handler import CustomBaseHandler
 
 @smkSecureV1
-class MyProfileHandler(tornado.web.RequestHandler, MongoMixing):
+class MyProfileHandler(CustomBaseHandler, MongoMixing):
 
     accounts = MongoMixing.db['accounts']
 

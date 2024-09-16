@@ -1,0 +1,60 @@
+<mat-toolbar class="toolbar-shadow">
+  <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+    <span>Elsa Quiz - Realtime Dashboard</span>
+    <div style="display: grid; grid-template-columns: auto auto auto auto">
+      <a class="my-profile">{{profileName}}</a>
+      <div>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="onSignOut()">Sign Out</button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
+
+<div class="dashboard-grid">
+  <div class="chart-container">
+    <h3>Area Chart (Last 30 Days Participants)</h3>
+    <ngx-charts-area-chart
+      [view]="[350, 300]"
+      [results]="lineChartData"
+      [animations]="animations"
+      [gradient]="true"
+    >
+    </ngx-charts-area-chart>
+  </div>
+
+  <div class="chart-container">
+    <h3>Top 10 Users with Marks</h3>
+    <ngx-charts-bar-vertical
+      [view]="[350, 300]"
+      [results]="topMarksChartData"
+      [animations]="animations"
+    >
+    </ngx-charts-bar-vertical>
+  </div>
+
+  <div class="chart-container">
+    <h3>Wrong and Right Ratio</h3>
+    <ngx-charts-pie-chart
+      [view]="[400, 400]"
+      [results]="pieChartData"
+      [labels]="showLabels"
+      [animations]="animations"
+    >
+    </ngx-charts-pie-chart>
+  </div>
+
+  <div class="chart-container">
+    <h3>Vertical Bar Chart (Wrong and Right)</h3>
+    <ngx-charts-bar-vertical
+      [view]="[350, 300]"
+      [results]="barChartData"
+      [animations]="animations"
+    >
+    </ngx-charts-bar-vertical>
+  </div>
+</div>
