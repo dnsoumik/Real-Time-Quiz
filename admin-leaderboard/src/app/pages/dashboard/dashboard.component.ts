@@ -52,7 +52,7 @@ export class DashboardComponent implements AfterViewInit {
   ) {
   }
 
-  displayedColumns: string[] = ['position', 'fullName', 'score', 'submittedAt'];
+  displayedColumns: string[] = ['position', 'Id', 'fullName', 'score', 'submittedAt'];
   dataSource = new MatTableDataSource<any>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
