@@ -105,6 +105,11 @@
           <td mat-cell *matCellDef="let element">{{ element.position + 1 }}</td>
         </ng-container>
 
+        <ng-container matColumnDef="Id">
+          <th mat-header-cell *matHeaderCellDef>QuiZ Id</th>
+          <td mat-cell *matCellDef="let element">{{ element._id }}</td>
+        </ng-container>
+
         <ng-container matColumnDef="fullName">
           <th mat-header-cell *matHeaderCellDef>Full Name</th>
           <td mat-cell *matCellDef="let element">{{ element.fullName }}</td>

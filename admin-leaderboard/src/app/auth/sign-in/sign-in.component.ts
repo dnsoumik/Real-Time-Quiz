@@ -21,6 +21,7 @@ export class SignInComponent {
         if (response.status) {
           // Assuming the response contains a token
           localStorage.setItem(AppConfig.signInKey, response.result[0]);
+          AppConfig.bearerToken = response.result[0];
           AppConfig.isSignedIn = true;
           // Navigate to the dashboard or some other protected route
           this.router.navigate(['/pages/dashboard']);

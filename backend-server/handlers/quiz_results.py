@@ -48,7 +48,9 @@ class QuizResultsHandler(CustomBaseHandler, MongoMixing):
                     },
                     {
                         '$project': {
-                            '_id': 0,
+                            '_id': {
+                                '$toString': '$_id'
+                            },
                             'fullName': 1,
                             'score': 1,
                             'total': 1,
