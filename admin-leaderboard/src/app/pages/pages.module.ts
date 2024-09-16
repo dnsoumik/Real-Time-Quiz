@@ -10,6 +10,12 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DashboardService } from './dashboard/dashboard.service';
 import { HttpClientModule } from '@angular/common/http';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatCardModule} from '@angular/material/card';
+
 
 const routes: Routes = [
   {
@@ -28,7 +34,13 @@ const routes: Routes = [
     MatMenuModule,
     RouterModule.forChild(routes),
     NgxChartsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatTooltipModule,
+    HttpClientModule,
+    MatProgressBarModule,
+    MatCardModule
   ],
-  providers: [DashboardService, provideHttpClient(withFetch())]
+  providers: [DashboardService, provideHttpClient(withFetch())],
 })
 export class PagesModule {}

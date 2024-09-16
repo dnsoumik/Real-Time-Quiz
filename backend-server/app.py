@@ -7,6 +7,7 @@ from handlers.questions import QuestionsHandler
 from handlers.quizzes import QuizHandler
 from handlers.play_quiz import PlayQuizHandler
 from handlers.base_handler import CustomBaseHandler
+from handlers.quiz_results import QuizResultsHandler
 
 # Catch-all handler for OPTIONS requests on any path
 class CatchAllOptionsHandler(CustomBaseHandler):
@@ -21,6 +22,7 @@ def make_app():
         (r'/api/questions', QuestionsHandler),
         (r'/api/quizzes', QuizHandler),
         (r'/api/play_quiz', PlayQuizHandler),
+        (r'/api/quiz_results', QuizResultsHandler),
         (r".*", CatchAllOptionsHandler)  # Catch all for OPTIONS
     ])
 

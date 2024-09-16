@@ -10,7 +10,8 @@ export const appConfig: ApplicationConfig = {
 };
 
 export class AppConfig {
-  static serverUrl: any = 'https://elsa-quiz.soumikdebnath.me';
+  // static serverUrl: any = 'https://elsa-quiz.soumikdebnath.me';
+  static serverUrl: any = 'http://localhost:8888';
   static isSignedIn: boolean = false;
   static signInKey: string = '__singing_with_http_req';
   static bearerToken: string = '';

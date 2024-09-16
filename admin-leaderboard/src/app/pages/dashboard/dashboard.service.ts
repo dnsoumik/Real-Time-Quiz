@@ -22,4 +22,15 @@ export class DashboardService {
     );
   }
 
+  getQuizResults(): Observable<any> {
+    return this.http.get<any>(
+      `${AppConfig.serverUrl}/api/quiz_results`,
+      {
+        headers: {
+          'Authorization': 'bearer ' + AppConfig.bearerToken
+        }
+      }
+    );
+  }
+
 }
