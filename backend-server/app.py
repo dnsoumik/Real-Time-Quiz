@@ -16,11 +16,11 @@ class CatchAllOptionsHandler(CustomBaseHandler):
 
 def make_app():
     return tornado.web.Application([
-        (r"/sign_in", SignInHandler),
-        (r'/my_profile', MyProfileHandler),
-        (r'/questions', QuestionsHandler),
-        (r'/quizzes', QuizHandler),
-        (r'/play_quiz', PlayQuizHandler),
+        (r"/api/sign_in", SignInHandler),
+        (r'/api/my_profile', MyProfileHandler),
+        (r'/api/questions', QuestionsHandler),
+        (r'/api/quizzes', QuizHandler),
+        (r'/api/play_quiz', PlayQuizHandler),
         (r".*", CatchAllOptionsHandler)  # Catch all for OPTIONS
     ])
 

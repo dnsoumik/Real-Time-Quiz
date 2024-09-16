@@ -13,7 +13,7 @@ export class AppService {
 
   getQuizById(quizId: string): Observable<any> {
     return this.http.get<any>(
-      `${AppConfig.serverUrl}/play_quiz`,
+      `${AppConfig.serverUrl}/api/play_quiz`,
       {
         params: {
           id: quizId
@@ -24,7 +24,7 @@ export class AppService {
 
   postQuizById(body: any): Observable<any> {
     return this.http.post<any>(
-      `${AppConfig.serverUrl}/play_quiz`,
+      `${AppConfig.serverUrl}/api/play_quiz`,
       body
     );
   }

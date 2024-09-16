@@ -13,7 +13,7 @@ export class DashboardService {
 
   getProfileInfo(): Observable<any> {
     return this.http.get<any>(
-      `${AppConfig.serverUrl}/my_profile`,
+      `${AppConfig.serverUrl}/api/my_profile`,
       {
         headers: {
           'Authorization': 'bearer ' + AppConfig.bearerToken

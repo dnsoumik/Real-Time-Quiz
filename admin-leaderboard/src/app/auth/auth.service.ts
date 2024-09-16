@@ -13,7 +13,7 @@ export class AuthService {
   signIn(username: string, password: string): Observable<any> {
     const body = { username, password };
     return this.http.post<any>(
-      `${AppConfig.serverUrl}/sign_in`,
+      `${AppConfig.serverUrl}/api/sign_in`,
       null,
       {
         params: {
